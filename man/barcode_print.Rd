@@ -14,6 +14,8 @@ barcode_print(code, outfile = "out.png", symbology = 20L, height = 50L)
 \item{symbology}{Barcode type see \url{http://www.zint.org.uk/Manual.aspx?type=p&page=5}}
 
 \item{height}{Integer indicating height. Ignored for some symbologies.}
+
+\item{scale}{Float indicating scale.}
 }
 \description{
 Use zint API to print barcodes

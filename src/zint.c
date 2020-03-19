@@ -5,13 +5,14 @@
 #include <zint.h>
 #include <string.h>
 
-SEXP barcode(SEXP code, SEXP outfile, SEXP symbologys, SEXP height) {
+SEXP barcode(SEXP code, SEXP outfile, SEXP symbologys, SEXP height, SEXP scale) {
   unsigned char *out = CHAR(STRING_ELT(code,0));
   unsigned char *file = CHAR(STRING_ELT(outfile, 0));
   struct zint_symbol *my_symbol;
   my_symbol = ZBarcode_Create();
   my_symbol -> symbology = asInteger(symbologys);
   my_symbol -> height = asInteger(height);
+  my_symbol -> scale = asReal(scale);
   strcpy(my_symbol -> outfile, file);
   ZBarcode_Encode(my_symbol, out, 0);
   int zret = ZBarcode_Print(my_symbol, 0);
