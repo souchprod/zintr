@@ -44,6 +44,7 @@ This is a basic example which shows you how to solve a common problem:
 library(zintr)
 barcode_print(8675309, "barcode1.png", scale = 0.5)
 barcode_print("Hello World", "barcode2.png", scale = 1.6)
+barcode_print("[01]08717648205842[17]181206[10]5120141[91]5158", "gs1.png", symbology = 16L, scale = 0.5)
 ```
 
 ![8675309](inst/examples/barcode1.png)
@@ -51,3 +52,7 @@ barcode_print("Hello World", "barcode2.png", scale = 1.6)
 <br>
 
 ![Hello World](inst/examples/barcode2.png)
+
+<br>
+
+![[01]08717648205842[17]181206[10]5120141[91]5158](inst/examples/barcode3.png)
