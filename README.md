@@ -7,6 +7,11 @@ zintr
 
 The goal of zintr is to provide barcode printing functionality to R using the Zint C library.
 
+Fork
+=====
+
+This is a fork of carlganz/zintr to add more settings capability to the barecore creator.
+
 Installation
 ------------
 
@@ -14,7 +19,7 @@ You can install zintr from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("CannaData/zintr")
+devtools::install_github("souchprod/zintr")
 ```
 
 But you will need to install Zint first. See [Zint documentation](http://www.zint.org.uk/Manual.aspx?type=p&page=2) for OS specific instructions. For Linux you can easily install with git and cmake:
