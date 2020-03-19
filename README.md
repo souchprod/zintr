@@ -42,8 +42,8 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(zintr)
-barcode_print(8675309, "barcode1.png")
-barcode_print("Hello World", "barcode2.png")
+barcode_print(8675309, "barcode1.png", scale = 0.5)
+barcode_print("Hello World", "barcode2.png", scale = 1.6)
 ```
 
 ![8675309](inst/examples/barcode1.png)
